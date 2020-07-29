@@ -9,7 +9,7 @@ SHELL ["/bin/bash", "-c"]
 # packages
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get -y update && \
-  apt-get install -y curl less libfontconfig1 libgomp1 libwww-perl rlwrap unzip && \
+  apt-get install -y curl git less libfontconfig1 libgomp1 libwww-perl rlwrap unzip && \
   apt-get clean
 
 # user
